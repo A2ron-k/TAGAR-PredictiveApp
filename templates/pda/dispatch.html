@@ -1,0 +1,49 @@
+<!-- Applies base layout for application -->
+{% extends "base.html" %} {% block head %}
+
+<title>Dispatch Logger</title>
+
+{% endblock %}
+
+<!------------------------------>
+<!-- Content area for HTML ----->
+<!------------------------------>
+{% block body %}
+
+<div class="" id="">
+	<div class="" id="">ACER's <br />Dispatcher Input</div>
+	<div class="" id="">
+		<form action="" method="post" name="dispatch_form">
+			<textarea
+				id=""
+				class=""
+				name="caller_input"
+				placeholder="Type call log here"
+				rows="5"
+				required
+			></textarea>
+
+			<input
+				type="submit"
+				value="Predict"
+				name="submit"
+				class=""
+				id=""
+			/>
+		</form>
+	</div>
+</div>
+
+<!--TODO: Add the prediction result display here  -->
+
+{% endblock %}
+
+<!------------------------------>
+<!-- Content area for scripts -->
+<!------------------------------>
+
+{% block script %}
+<script>
+	// Insert scripts here
+</script>
+{% endblock %}

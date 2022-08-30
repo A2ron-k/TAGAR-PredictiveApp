@@ -1,0 +1,68 @@
+<!-- Copy this html file, rename and insert in the code for the respective page -->
+
+<!-- Applies base layout for application -->
+{% extends "base.html" %} 
+
+{% block head %}
+<title>Register</title>
+{% endblock %}
+
+<!------------------------------>
+<!-- Content area for HTML ----->
+<!------------------------------>
+{% block body %}
+
+<!-- Register Form -->
+<form action="/register" method="POST">
+	<div class="">Sign up to PDA</div>
+
+	<div class="form-group">
+		<input
+			type="text"
+			id="form-input-username"
+			placeholder="Username"
+			name="username"
+			required
+		/>
+		<br /><br />
+		<input
+			type="password"
+			id="form-input-password"
+			placeholder="Password"
+			name="password"
+			required
+		/><br /><br />
+		<input
+			type="password"
+			id="form-input-verify"
+			placeholder="Re-enter Password"
+			name="verify_password"
+			required
+		/><br /><br />
+		<input
+			type="text"
+			id=""
+			name="phone_num"
+			placeholder="8 Digit Phone Number"
+		/>
+		<input type="text" name="email" placeholder="Email" />
+		<button onclick="register()" id="" name="submit" value="submit">
+			Sign In
+		</button>
+	</div>
+</form>
+
+{% endblock %}
+
+<!------------------------------>
+<!-- Content area for scripts -->
+<!------------------------------>
+
+{% block script %}
+<!-- <script>
+	function register() {
+		alert('User registered!')
+		window.location.href = "/login"
+	}
+</script> -->
+{% endblock %}

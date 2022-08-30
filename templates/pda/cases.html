@@ -1,0 +1,29 @@
+<!-- Applies base layout for application -->
+{% extends "base.html" %}
+{% block head %}
+<!-- !Insert code here -->
+
+{% endblock %}
+
+<!------------------------------>
+<!-- Content area for HTML ----->
+<!------------------------------>
+{% block body %}
+<!-- !Insert code here -->
+<h2>IT WORKS</h2>
+{% for your_list_element in context %} {{ your_list_element.chief_complain}} -
+{{ your_list_element.full_address}}<br />
+{{ your_list_element.date}} - <a href="/cases/{{ your_list_element._id}}">{{ your_list_element.case_id}}</a
+><br /><br />
+
+{% endfor %} {% endblock %}
+
+<!------------------------------>
+<!-- Content area for scripts -->
+<!------------------------------>
+
+{% block script %}
+<script>
+	// Insert scripts here
+</script>
+{% endblock %}

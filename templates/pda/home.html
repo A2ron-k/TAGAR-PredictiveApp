@@ -1,0 +1,29 @@
+<!-- Copy this html file, rename and insert in the code for the respective page -->
+
+<!-- Applies base layout for application -->
+{% extends "base.html" %} {% block head %}
+<!-- !Insert code here -->
+<title>Home</title>
+{% endblock %}
+
+<!------------------------------>
+<!-- Content area for HTML ----->
+<!------------------------------>
+{% block body %}
+<!-- !Insert code here -->
+<h1>HOME PAGE</h1>
+
+Welcome {{session['username']}}. 
+
+{% endblock %}
+
+<!------------------------------>
+<!-- Content area for scripts -->
+<!------------------------------>
+
+{% block script %}
+<script>
+	// Insert scripts here
+</script>
+{% endblock %}
+
