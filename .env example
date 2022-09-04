@@ -1,0 +1,2 @@
+MONGODB_USR = "username"
+MONGODB_PWD = "password"
