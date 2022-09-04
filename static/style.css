@@ -1,0 +1,27 @@
+.box {
+	background-color: red;
+}
+
+.login-form {
+	height: 369px;
+	top: 50%;
+
+	/* Primary */
+
+	background: #446474;
+	/* drop-tileCard */
+
+	box-shadow: 5px 8px 13px rgba(113, 113, 113, 0.25);
+	border-radius: 16px;
+}
+
+.login-btn {
+	background-color: #e99f0c;
+
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+	border-radius: 16px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #e99f0c;
+}

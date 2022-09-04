@@ -1,7 +1,5 @@
 <!-- Applies base layout for application -->
-{% extends "base.html" %} 
-
-{% block head %}
+{% extends "base.html" %} {% block head %}
 <title>Login</title>
 
 {% endblock %}
@@ -10,29 +8,53 @@
 <!------------------------------>
 {% block body %}
 
-<form action="/login" method="POST">
-	<div class="">Sign in to PDA</div>
+<div class="container-fluid">
+	<div class="row row-cols-8 justify-content-center">
+		<div class="col-2 box"></div>
+		<div class="col-8 text-center">
+			<div class="container my-5 px-5 pt-5 login-form">
+				<form action="/login" method="POST">
+					<div class="display-5 mb-4">Welcome. Sign in please.</div>
+					<div>
+						<input
+							class="form-control mb-3"
+							type="text"
+							name="email"
+							placeholder="Email"
+						/>
+					</div>
+					<div>
+						<input
+							class="form-control mb-3"
+							type="password"
+							id="form-input-password"
+							placeholder="Password"
+							name="password"
+							required
+						/>
+					</div>
 
-	<div class="form-group">
-		<input type="text" name="email" placeholder="Email" />
+					<div class="field mb-2">
+						<label class="checkbox">
+							<input type="checkbox" name="remember" />
+							Remember me
+						</label>
+					</div>
 
-		<input
-			type="password"
-			id="form-input-password"
-			placeholder="Password"
-			name="password"
-			required
-		/>
-		<input type="submit" value="submit" name="submit" />
+					<div>
+						<input
+							class="btn btn-primary login-btn mb-3"
+							type="submit"
+							value="Login"
+							name="submit"
+						/>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-2 box"></div>
 	</div>
-
-	<div class="field">
-		<label class="checkbox">
-			<input type="checkbox" name="remember" />
-			Remember me
-		</label>
-	</div>
-</form>
+</div>
 
 {% endblock %}
 <!------------------------------>
