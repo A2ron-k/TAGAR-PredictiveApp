@@ -7,14 +7,16 @@
 <!-- Below is Content area for HTMl -->
 <!------------------------------>
 {% block body %}
-
 <div class="container-fluid">
-	<div class="row row-cols-8 justify-content-center">
-		<div class="col-2 box"></div>
-		<div class="col-8 text-center">
-			<div class="container my-5 px-5 pt-5 login-form">
-				<form action="/login" method="POST">
-					<div class="display-5 mb-4">Welcome. Sign in please.</div>
+	<div class="row row-cols-4 row-cols-lg-6">
+		<div class="col-2 col-lg-4"></div>
+		<div class="col-8 col-lg-4 text-center">
+			<div class="container my-5 px-5 pt-5 bg-primary rounded-4">
+				<form action="#" method="POST">
+					<h4 class="mb-4 text-white" style="text-align: left">
+						Welcome. <br />
+						Sign in please.
+					</h4>
 					<div>
 						<input
 							class="form-control mb-3"
@@ -35,7 +37,7 @@
 					</div>
 
 					<div class="field mb-2">
-						<label class="checkbox">
+						<label class="checkbox text-white">
 							<input type="checkbox" name="remember" />
 							Remember me
 						</label>
@@ -43,16 +45,19 @@
 
 					<div>
 						<input
-							class="btn btn-primary login-btn mb-3"
+							class="btn btn-orange mb-3 w-50"
 							type="submit"
 							value="Login"
 							name="submit"
 						/>
 					</div>
 				</form>
+				<div class="pb-4">
+					<a class="text-white fst-italic">First time using PDA?</a>
+				</div>
 			</div>
 		</div>
-		<div class="col-2 box"></div>
+		<div class="col-2 col-lg-4"></div>
 	</div>
 </div>
 
